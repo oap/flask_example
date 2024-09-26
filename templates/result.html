@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculation Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/bank.png') }}" alt="Bank" class="logo">
+        <h1>Calculation Result</h1>
+        <p>Principal Amount: {{ principal }}</p>
+        <p>Rate of Interest: {{ rate }}%</p>
+        <p>Time: {{ time }} years</p>
+        <h2>Simple Interest: {{ interest }}</h2>
+        <a href="/">Calculate Again</a>
+    </div>
+</body>
+</html>
